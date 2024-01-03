@@ -1,0 +1,465 @@
+/* ===========================================
+    MEDIA QUERIES FOR DASHBOARD
+   =========================================== */
+/* 1135px === 113.5rem === 70.94em */
+@media screen and (max-width: 70.94em) {
+    /* popup modal */
+    .product__modal, .product-update__modal {
+        width: 65rem;
+        height: 40rem;
+    }
+    .product__form {
+        height: 28rem;
+    }
+
+    /* marketplace */
+    .product__card { height: auto; }
+    .products__container {
+        grid-template-columns: 25fr 100fr;
+    }
+}
+
+
+/* 1100px === 110rem === 68.75em */
+@media screen and (max-width: 68.75em) {
+    .main__dashboard {
+        padding: 4rem 2rem 2rem;
+    }
+    .dashboard__insights {
+        gap: 1.6rem;
+        transition: all .35s;
+    }
+    .insight {
+        padding: 2rem;
+        transition: all .35s;
+    }
+    .insight__icon {
+        font-size: 1.8rem;
+    }
+    .insignt__text {
+        font-size: 2rem;
+    }
+    .form__data, .delete-data {
+        max-width: 55rem;
+        padding: 2.4rem;
+    }
+    .open .main__dashboard .dashboard__insights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 1030px === 103rem === 64.19em */
+@media screen and (max-width: 64.19em) {
+    .nav__input {
+        width: 25rem;
+        transition: all .35s;
+    }
+    .nav__input:focus {
+        width: 35rem
+    }
+
+    .dashboard__transaction {
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+    }
+}
+
+/* 950px === 95rem === 59.68em */
+@media screen and (max-width: 59.68em) {
+    /* something magical will happen... */
+    .section__bottom {
+        grid-template-columns: 7rem 1fr;
+        transition: 0ms;
+    }
+    .section__top {
+        height: 7rem;
+        display: flex;
+        align-items: flex-start;
+    }
+    .dashboard__insights  {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.8rem;
+    }
+    .insight__title {
+        font-size: 1.2rem;
+    }
+    .menu__link:link, .menu__link:visited {
+        gap: 2.8rem;
+        transition: none 0ms;
+    }
+    .open .menu__link:link, .menu__link:visited {
+        padding: 1.4rem 2.4rem;
+        width: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .menu__button:link, .menu__button:visited {
+        display: none;
+        opacity: 0;
+    }
+    .open .menubar, .open .main__dashboard {
+        position: fixed;
+        top: 7rem;
+    }
+    .open .menubar {
+        left: 0;
+        width: 30rem;
+        height: 88vh;
+        z-index: 100;
+        backface-visibility: hidden;
+    }
+    .open .main__dashboard::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        overflow-y: hidden;
+        background-color: rgba(0, 0, 0, .1);
+        position: fixed;
+        top: 7rem;
+        left: 0;
+        right: 0;
+        z-index: 50;
+    }
+    .open .main__dashboard {
+        right: 0;
+        left: 7rem;
+    }
+    .copy__modal {
+        width: 50rem;
+    }
+    .open .menubar .menu__link.admin__menu--logout {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.4rem;
+    }
+    
+    /* popup modal */
+    .delete__modal { 
+        width: 40rem;
+    }
+    .product__modal, .product-update__modal {
+        width: 55rem;
+        height: 38rem;
+    }
+    .product__form {
+        height: 25rem;
+    }
+    /* *** */
+    .hoplink__modal {
+        width: 60rem;
+        padding: 2.4rem;
+        height: auto;
+    }
+    /* marketplace */
+    .products__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .product__filtering {
+        display: none;
+        opacity: 0;
+    }
+    .product__filtering-btn {
+        display: block;
+        opacity: 1;
+        margin: -3rem 0 3rem;
+    }
+}
+
+
+/* 820px === 82rem === 51.56em */
+@media screen and (max-width: 51.56em) {
+    .dashboard__button {
+        padding: 1rem 1.8rem;
+        box-shadow: inset 0 0 0 .16rem #444;
+        border-radius: .6rem;
+    }
+    .dashboard__button:hover { border-radius: inherit; }
+    .close .bottom__products {
+        gap: 2.4rem;
+    }
+    .menubar {
+        overflow-y: hidden;
+    }
+    .menubar .menu__button,  .menubar .admin__menu--logout {
+        display: none;
+        opacity: 0;
+    }
+    .menu__bottom {
+        margin-top: 1.4rem;
+    }
+    .menu__body {
+        padding: 2.4rem 0 0;
+        padding-bottom: 1.8rem;
+    }
+    .menu__list {
+        gap: .62rem;
+    }
+    
+    
+}
+
+
+/* 775px === 77.5rem === 48.44em */
+@media screen and (max-width: 48.44em) {
+    html { font-size: 56.25%; }
+    .nav__input {
+        width: 18rem;
+        transition: all .35s;
+    }
+    .nav__input:focus {
+        width: 25rem
+    }
+    .nav__icons {
+        gap: 1.4rem;
+        margin-right: 3.6rem;
+    }
+    .icon__box {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    
+    /* table */
+    /* .dashboard__table {
+        overflow-x: scroll;
+    } */
+    .table, .table-vp, .table-mu, .table-mp {
+        width: 75rem;
+    }
+    .table-row-message .note-no { text-align: left; }
+    .table-po1 {
+        width: 90rem;
+    }
+}
+
+
+/* 600px === 60rem === 37.5em */
+@media screen and (max-width: 37.5em) {
+    .section__top {
+        display: grid;
+        /* grid-template-columns: 14rem 1fr; */
+        grid-template-columns: 10rem 1fr;
+        gap: 6rem;
+        align-items: flex-start;
+    }
+    .main__dashboard {
+        padding: 2.4rem 1.2rem;
+    }
+    .dashboard__insights, .open .main__dashboard .dashboard__insights {
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav__input {
+        width: 15rem;
+    }
+    .nav__input:focus {
+        width: 22rem;
+    }
+    .search__button {
+        display: none;
+    }
+    .logo {
+        display: none;
+        opacity: 0;
+    }
+    .nav__logo {
+        gap: 1.6rem;
+        margin-left: 1.4rem;
+        padding: 0;
+    }
+    .logo-small {
+        display: block;
+        opacity: 1;
+        height: 4rem;
+    }
+    .copy__modal { width: 40rem; }
+
+    /* popup modal */
+    .generic__modal, .product__modal, .product-update__modal {
+        width: 90%;
+    
+        padding: 1.4rem 0 1.4rem 1.4rem;
+        height: 80vh;
+    }
+    .product__form {
+        padding-right: 1.4rem;
+        height: 60vh;
+    }
+    .form__grid-generic, .form__grid3-generic {
+        display: flex;
+        flex-direction: column;
+    }
+    /* *** */
+    .hoplink__modal {
+        width: 90%;
+        padding: 2.4rem;
+        height: auto;
+    }
+    .form__data, .delete-data {
+        padding: 1rem;
+    }
+
+    .product__card {
+        display: none;
+        opacity: 0;
+    }
+    .products__cards--box  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .product__card-mobile {
+        display: block;
+        opacity: 1;
+
+        perspective: 150rem;
+        height: 48rem;
+        position: relative;
+    }
+    .product__side {
+        height: 48rem;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        transition: all 1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, .15);
+        background-color: #fff;
+    }
+    .product__card-mobile:hover .front {
+        transform: rotateY(-180deg);
+      }
+      
+    .product__card-mobile:hover .back {
+        transform: rotateY(0);
+    }
+    .back {
+        padding: 1.6rem;
+        transform: rotateY(180deg);
+    }
+    .product__image--container {
+        height: 20rem;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 1.4rem;
+    }
+    .product__image {
+        width: 100%;
+    }
+    .product__heading {
+        padding: 1.4rem;
+    }
+    .product__title {
+        font-size: 2rem;
+    }
+    .front--bottom {
+        padding: 1.4rem;
+    }
+    .product__info--item p {
+        display: none;
+    }
+    .product__button--box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        align-items: center;
+    }
+    .hero-section.order-hero, .about-container.order-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-container.order-about {
+        flex-direction: column-reverse;
+        gap: 8rem;
+    }
+    .order-nav {
+        gap: 4.8rem;
+    }
+}
+
+/* 450px === 45rem === 28.125em */
+@media screen and (max-width: 30em) {
+    .section__top {
+        gap: 0rem;
+    }
+    .products__cards--box  {
+        margin: auto;
+        width: 75%;
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+    }
+    .dashboard__insights {
+        gap: 1.4rem;
+    }
+    .insight {
+        padding: 1.4rem 1rem;
+    }
+    .checkout__modal {
+        width: 90%;
+    }
+    .alert {
+        width: 90% !important;
+        padding: 1.6rem;
+    }
+    .menu__list {
+        gap: 1.8rem;
+    }
+}
+
+/* 415px === 41.5rem === 26em */
+@media screen and (max-width: 26em) {
+    .products__cards--box  {
+        width: 90%;
+    }
+    .dashboard__insights, .open .main__dashboard .dashboard__insights {
+        padding: 0 1.8rem;
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+        max-width: 100%;
+    }
+
+    .insight {
+        gap: 2.4rem;
+        padding: 1.8rem;
+    }
+}
+
+/* 400px === 40rem === 23.125em */
+@media screen and (max-width: 25.125em) {
+    .section__top {
+        gap: 2rem;
+    }
+    .nav__input {
+        width: 10rem;
+        transform: translateX(-4rem);
+        transition: all .35s;
+    }
+    .nav__input:focus {
+        /* position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2000; */
+        
+        width: 16rem;
+        background-color: #fff;
+        box-shadow: .2rem .2rem 4rem rgba(0, 0, 0, .1);
+    }
+}
+
+/* 390px === 39rem === 22.5em */
+@media screen and (max-width: 23.5em) {
+    .btn__image-upload {
+    width: 100%;
+    }
+    .insight {
+        gap: 2.4rem;
+    }
+}

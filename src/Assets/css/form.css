@@ -1,0 +1,293 @@
+.login__form, #buyer, .signup__form {
+    padding: 8rem 0;
+}
+.main .signup__form {
+    padding: 8rem 0 8rem;
+}
+
+#admin-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50rem;
+}
+.login__container, .signup__container {
+    max-width: 108rem;
+    margin: 0 auto;
+    gap: 3.6rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+    overflow: hidden;
+    height: 55rem;
+    align-items: start;
+}
+.signup__container {
+    grid-template-columns: 1fr 1.5fr;
+}
+.login__container {
+    grid-template-columns: 1fr 1fr;
+}
+form.login {
+    margin-top: 5.2rem;
+}
+
+.form__heading {
+    color: #444;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.login__form form {
+    width: 100%;
+    padding: 0 3.6rem;
+}
+
+.signup__form form {
+    width: 100%;
+    padding: 0 2.8rem;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6rem;
+    /* margin-bottom: 1.8rem; */
+    margin-bottom: 2.8rem;
+}
+
+.login__form .form__item.select .form__item--input {
+    width: 60%;
+}
+
+.form__item.select .form__item--input {
+    border: 1px solid #ddd;
+    background-color: transparent;
+}
+
+.form__item--label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.form__item--input {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    color:#444;
+    border: none;
+    background-color: #eee;
+    border: .15rem solid transparent;
+    border-radius: .6rem;
+    transition: all .35s;
+}
+.form__item--input:hover {
+    border: .15rem solid transparent;
+}
+.form__item--input:focus {
+    outline: none;
+    border: .15rem solid #AC3931;
+    background-color: transparent;
+}
+
+.form__item--input:valid {
+    border: .15rem solid #008600;
+}
+
+
+.select--input { 
+    cursor: pointer;
+    width: 100%;
+}
+
+.select--input option {
+    font-size: 1.4rem;
+    background-color: #eee;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.form__check, .form__submit {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.form__submit { margin-top: 1.6rem }
+
+.form__help, .form__text {
+    font-size: 1.4rem;
+}
+.form__text {
+    font-weight: 600;
+}
+
+.form__end {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.form__end .form__text {
+    color: #333;
+}
+span .form__text { font-weight: 600; }
+
+.form__image {
+    width: 100%;
+    filter: grayscale(50);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: .8rem;
+    display: inline-block;
+}
+
+.form__button {
+    /* border-radius: .8rem; */
+    padding: 1.2rem 3.6rem;
+    background-color: #2e3192;
+    color: #fff;
+    transition: all .35s;
+}
+
+.form__button:hover, .form__button:active {
+    background-color: rgba(46, 49, 146, 0.8);;
+}
+
+.signup__form .signup__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2.4rem;
+    justify-items: space-between;
+}
+
+div.phone__input--box {
+    position: relative;
+    overflow: hidden;
+}
+input.phone__input {
+    padding-left: 6.8rem;
+}
+input.country__code {
+    position: absolute;
+    top: 50%;
+    left: .5%;
+    transform: translateY(-50%);
+    border: none;
+    width: 6.2rem;
+    cursor: text;
+}
+input.country__code:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    border: transparent;
+}
+.form--password {
+    position: relative;
+    width: 100%;
+}
+.form--password input {
+    width: 100%;
+}
+.pass-icon {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+
+/* ======================= */
+.drop-down__shadow, .email-confirm-overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.drop-down__shadow ,
+.modal {
+    transition: all .35s;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .6rem;
+    z-index: 2000;
+    background-color: #fff;
+}
+
+.modal__container {
+    max-width: 36rem;
+    height: auto;
+    padding: 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal__heading  {
+    font-size: 2rem;
+    color: #2e3192;
+    margin-bottom: 1.4rem;
+}
+
+.close__icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2.8rem;
+}
+
+.open__modal {
+    cursor: pointer;
+}
+
+.welcome {
+    font-size: 4.8rem;
+    width: 8rem;
+    height: 8rem;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #eee;
+    display: inline-block;
+    margin-bottom: 1.8rem;
+    margin-left: 1.2rem;
+}
+
+.user__email {
+    display: inline-block;
+    padding: .12rem .42rem;
+    border-radius: 2rem;
+    color: #333;
+    background-color: #eee;
+}
+
+.modal__text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1.4rem;
+}
+
+.modal .form__item--input {
+    background-color:#eee;
+}
+.modal .form__item--input:focus {
+    background-color: transparent;
+}
